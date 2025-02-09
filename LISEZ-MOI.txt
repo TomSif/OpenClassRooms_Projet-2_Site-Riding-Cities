@@ -1,0 +1,48 @@
+# 📄 LISEZ-MOI.txt - Modifications apportées
+
+## 🔹 Objectif :
+
+- Analyse et réutilisation du code existant : Étudier le code existant et la maquette pour comprendre le fonctionnement, puis copier une section existante du site pour la réutiliser dans la nouvelle section "Les membres 		fondateurs".
+
+- Modification du code HTML : Adapter la section copiée pour qu’elle corresponde à la maquette (modifier le texte, supprimer une colonne, ajouter des images avec attributs `src` et `alt`).
+
+- Application des classes CSS : Utiliser les classes CSS déjà présentes pour appliquer les styles (couleur, alignement, fond) sans modifier le fichier CSS.
+
+- Ajout des boutons et finalisation : Ajouter un titre, modifier l’apparence et le comportement des boutons de téléchargement (couleur, forme, effet au survol), et relier les boutons aux bons documents.
+
+
+### Changements supplémentaires apportés :
+
+1. **Optimisation des images** :
+   - Conversion des images au format **WebP** pour réduire leur poids et améliorer le temps de chargement.
+
+2. **Accessibilité** :
+   - Ajout des attributs `aria-label` sur les éléments interactifs pour améliorer la compréhension pour les utilisateurs de lecteurs d'écran.
+   - Ajout d'attibuts alt pour améliorer l'accessibilité des lecteurs d'écran
+   
+3. **SEO** :
+   - Utilisation de balises **meta** (description, keywords) pour améliorer le **SEO** du site.
+	- Ajout d'attribut alt sur les images, `alt` aide aussi les moteurs de recherche à mieux comprendre l'image, ce qui peut améliorer le référencement du site.
+
+4. **Sécurité**
+   - Ajout des attributs `rel="noopener noreferrer"` aux liens des boutons de téléchargement.
+   - **Pourquoi** : Ces attributs améliorent la sécurité en empêchant le site cible d'avoir accès à la page d'origine via la méthode `window.opener`. Cela protège contre des attaques comme le **tabnabbing** (modification de l'onglet d'origine), en plus de prévenir des fuites de données sensibles.
+
+
+### Changements supplémentaires qui pourraient être apportés :
+   
+1. **Accessibilité visuelle** :
+   - **Contraste** des couleurs : Modifications nécessaires pour atteindre un **contraste suffisant** selon les normes d'accessibilité.
+
+2. **Hébergement des polices** :
+   - Planification de l'hébergement **local des polices en WOFF2** pour réduire les requêtes externes et améliorer la vitesse de chargement.
+
+
+####📂 Fichiers modifiés :
+- `index.html`
+- Images au format **WebP** dans le dossier `/images`
+
+
+#### 📝 Notes :
+Le score Lighthouse est passé de **87 à 99** grâce à ces améliorations.  
+La seule amélioration restante pour atteindre un score de 100 est de résoudre les problèmes de contraste et d’héberger localement les polices en WOFF2.
